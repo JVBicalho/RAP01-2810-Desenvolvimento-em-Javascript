@@ -92,6 +92,12 @@
         formulario.addEventListener('submit', function(e) {
             e.preventDefault();
             var email = document.querySelector('input[name="email"]').value;
+            if (validarEmail(email)) {
+                alert("Email válido");
+            } else {
+                alert("Email inválido ! Tente algo como: exemplo@email.com .");
+                
+            }
         });
     </script>
 </body>
